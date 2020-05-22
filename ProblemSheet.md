@@ -191,7 +191,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: max got an empty 
     at ExceptionsExamples.main(ExceptionsExamples.java:31)
 ```
 
-tells us that when the `main` method called the `max` method one line 31 in `ExceptionsExamples.java`, and the `max` method threw an `IllegalArgumentException` on line `14` with the message: `"max got an empty list"`.
+tells us that the `main` method called the `max` method one line 31 in `ExceptionsExamples.java`, and the `max` method threw an `IllegalArgumentException` on line `14` with the message: `"max got an empty list"`.
 
 ## Problems: You say Dictionary, I say Map
 
