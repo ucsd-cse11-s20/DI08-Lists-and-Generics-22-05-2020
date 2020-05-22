@@ -163,7 +163,7 @@ Exceptions are Java's way of handling errors that can happen when we run our pro
 2. `NullPointerException`: Happens when we try to read a field of, or call a method on a `null` value.
 3. `ArithmeticException`: Happens when we try to run an invalid arithmetic operation (e.g. divide by zero)
 
-This week, we saw how to _throw_ exceptions ourselves, which allows us to be more specific about the nature of the error (by throwing an exception of a particular type) and provide a custom, more descriptive, error message. To do so, we simply use the keyword `throw` followed by an instance of a class implementing the `Throwable` interface:
+This week, we saw how to _throw_ exceptions ourselves, which allows us to be more specific about the nature of the error (by throwing an exception of a particular type) and provide a custom, more descriptive, error message. To do so, we simply use the keyword `throw` followed by an instance of a class extending the `Throwable` class:
 
 ```java
 static Integer max(ArrayList<Integer> elements) {
@@ -175,11 +175,11 @@ static Integer max(ArrayList<Integer> elements) {
 }
 ```
 
-The `IllegalArgumentException` class (which implements the `Throwable` interface) is thrown when the input to a method/program/etc. is not valid for that method/program/etc. Since `max` is only defined/meaningful for non-empty lists, we throw an instance of it (by calling the constructor of that exception using `new`) to handle this case.
+The `IllegalArgumentException` class (which extends the `Throwable` class) is thrown when the input to a method/program/etc. is not valid for that method/program/etc. Since `max` is only defined/meaningful for non-empty lists, we throw an instance of it (by calling the constructor of that exception using `new`) to handle this case.
 
 The `throw` keyword:
 
-1. Exits out of each method call consecutively, until it eventually halts the program.
+1. Exits out of each method call in reverse order that they were called, until it eventually exits the program.
 2. Collects information about each method's stack frame as it exists them.
 3. Prints out this information, called the "Stack Trace", as well as the message of the exception itself to the terminal.
 
@@ -191,7 +191,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: max got an empty 
     at ExceptionsExamples.main(ExceptionsExamples.java:31)
 ```
 
-tells us that when the `main` method called the `max` method one line 31 in `ExceptionsExamples.java`, the `max` method threw an `IllegalArgumentException` on line `14` with the message: `"max got an empty list"`
+tells us that when the `main` method called the `max` method one line 31 in `ExceptionsExamples.java`, and the `max` method threw an `IllegalArgumentException` on line `14` with the message: `"max got an empty list"`.
 
 ## Problems: You say Dictionary, I say Map
 
