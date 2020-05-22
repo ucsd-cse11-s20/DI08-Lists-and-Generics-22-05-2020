@@ -198,7 +198,7 @@ tells us that the `main` method called the `max` method one line 31 in `Exceptio
 ### Problem 1:
 Recall the `lookup` method from [PA5](https://ucsd-cse11-s20.github.io/pa5/#array-methods). This method accepts two arrays, a `String` array named `keys` and an `int` array named `values`, and a String parameter `key` that it looks up in the "keys" to return the corresponding "value".
 
-In file named `Dictionary.java`, write a class named `DictionaryExamples` and in it define a method named `lookup` that accepts two `List`s named `keys` and `values` and a `key`, and returns the value corresponding to the key. If the key does not exist, it should return `null`. This method should be generic over _two_ types, a type `T` for `keys`, and a type `U` for `values`.
+In file named `Dictionary.java`, write a class named `DictionaryExamples` and in it define a method named `lookup` that accepts two `List`s named `keys` and `values` and a `key`, and returns the value corresponding to the key. If the key does not exist, it should return `null`. This method should be generic over _two_ types, a type `K` for `keys`, and a type `V` for `values`.
 
 Write at least 4 tests for this method, using `ArrayList`s of all possible combinations of `String` and `Integer` types.
 
