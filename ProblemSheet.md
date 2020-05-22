@@ -208,7 +208,7 @@ In the file `Dictionary.java`, write a new class `Dictionary` which is generic o
 Write a test that creates an instance of a `Dictionary` from `String`s to `Integer`s, and checks that both fields are empty.
 
 ### Problem 3:
-Write a method `put` in `Dictionary` that accepts two parameters of type `K` and `V`, and inserts them in the dictionary. For no, you can assume that all keys in the dictionary are unique.
+Write a method `put` in `Dictionary` that accepts two parameters of type `K` and `V`, and inserts them in the dictionary. For now, you can assume that all keys in the dictionary are unique.
 
 Then write another method named `get` that accepts a parameter of type `K` and returns the matching value if it exists in the dictionary. It should return `null` if no such key exists.
 
@@ -217,10 +217,16 @@ Write at least 4 interesting tests for these methods.
 ### Problem 4:
 Modify the `put` method from Problem 3 to account for duplicate keys. If the given key already exists in the dictionary, it should _update_ the corresponding value rather than adding a duplicate key.
 
-Write at least 4 interesting tests to make sure that (a) values are correctly updated and (b) duplicate keys cannot be added to the dictionary using the `put` method.
+Write at least 6 tests to make sure that:
+
+1. Values are correctly updated
+2. Duplicate keys cannot be added to the dictionary using the `put` method.
+3. Updating a value using `put` does not change the value of other keys in the dictionary.
+
+Are there other possible bugs we should test for?
 
 ### Problem 5: [Extra problem for the curious]
 Using the `Pair` class that we defined in lecture, rewrite the `Dictionary` class to use a single list of pairs, instead of two separate lists.
 
 ### Problem 6: [Bonus problem for the adventurous]
-Look up the definition of the `Map` interface [here](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html). Pick 3 other interesting methods from `Map` and implement them for the `Dictionary` class we defined.
+The `Dictionary` above implements some of the basic methods for the `Map` interface in Java. Look up the definition of the `Map` interface [here](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html), pick 3 other interesting methods from `Map` and implement them for the `Dictionary` class we defined.
