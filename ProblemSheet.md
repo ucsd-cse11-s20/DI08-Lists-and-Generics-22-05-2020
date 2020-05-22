@@ -1,5 +1,5 @@
 # Generics and Lists
-This week, we learned about a very important concept in Java (and Computer Science in general!) called "Parametric Polymorphism", which is a fancy word that simply means using the same code to work with different data types. (Okay, it's a bit more complicated than that, but it's a good enough definition for our purposes). So for discussion, we are going to get some practice writing Polymorphic code (also called "Generic" in Java) and see how we can use it to do more with less code. But as ususal, before that here's the review:
+This week, we learned about a very important concept in Java (and Computer Science in general!) called "Parametric Polymorphism", which is a fancy word that simply means using the same code to work with different data types. (Okay, it's a bit more complicated than that, but it's a good enough definition for our purposes). So for discussion, we are going to get some practice writing Polymorphic code (also called "Generic" in Java) and see how we can use it to do more with less code. But as usual, before that here's the review:
 
 ## Review
 
@@ -31,8 +31,8 @@ int longTweetCount = count(
 
 type `T` corresponds to `TextTweet` in both parameters.
 
-### Generic Intefaces and Classes
-Java also allows us to define generic interfaces and classes. To define these, we again use the `<>` notation, but write it in front of the name of the interface or class instead. Like with methods, this allows us to use that type parameter as a type name in the body of the class/interface defition:
+### Generic Interfaces and Classes
+Java also allows us to define generic interfaces and classes. To define these, we again use the `<>` notation, but write it in front of the name of the interface or class instead. Like with methods, this allows us to use that type parameter as a type name in the body of the class/interface definition:
 
 ```java
 interface Checker<T> {
@@ -159,7 +159,7 @@ When calling an overloaded method, Java knows which one to call based on the arg
 ### Exceptions
 Exceptions are Java's way of handling errors that can happen when we run our programs. When programming, we have often been making assumptions about our input ("the array is not empty", "the argument can be read as an integer", etc.) where our code had no way of handling those erroneous/exceptional cases. You may have run into exceptions as a result of incorrect/buggy code as well. Some of these exceptions include:
 
-1. `ArrayOutOfBoudsException`: Happens when we try to get the element at an index of an array that doesn't exist
+1. `ArrayOutOfBoundsException`: Happens when we try to get the element at an index of an array that doesn't exist
 2. `NullPointerException`: Happens when we try to read a field of, or call a method on a `null` value.
 3. `ArithmeticException`: Happens when we try to run an invalid arithmetic operation (e.g. divide by zero)
 
@@ -168,7 +168,7 @@ This week, we saw how to _throw_ exceptions ourselves, which allows us to be mor
 ```java
 static Integer max(ArrayList<Integer> elements) {
     if (elements.size() == 0) {
-        throw new IllegalArgumentException("max got an emtpy list");
+        throw new IllegalArgumentException("max got an empty list");
     }
 
     /* ... */
