@@ -2,8 +2,12 @@ Zoom link: https://ucsd.zoom.us/j/870346269
 
 Zoom recording: COMING SOON
 
-Problem sheet for this discussion: COMING SOON
+Problem sheet for this discussion: 
+
+https://github.com/ucsd-cse11-s20/DI08-Lists-and-Generics-22-05-2020/blob/master/ProblemSheet.md
+
 Starter code: COMING SOON
+
 Solutions: COMING SOON
 
 Readings reviewd in this discussion:
