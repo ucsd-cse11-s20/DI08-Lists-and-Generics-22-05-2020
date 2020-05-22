@@ -6,7 +6,9 @@ Problem sheet for this discussion:
 
 https://github.com/ucsd-cse11-s20/DI08-Lists-and-Generics-22-05-2020/blob/master/ProblemSheet.md
 
-Starter code: COMING SOON
+Starter code: 
+
+https://github.com/ucsd-cse11-s20/DI08-Lists-and-Generics-22-05-2020/releases/download/1.0/di07.zip
 
 Solutions: COMING SOON
 
