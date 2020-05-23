@@ -10,7 +10,10 @@ Starter code:
 
 https://github.com/ucsd-cse11-s20/DI08-Lists-and-Generics-22-05-2020/releases/download/1.0/di07.zip
 
-Solutions: COMING SOON
+Solutions: 
+
+https://github.com/ucsd-cse11-s20/DI08-Lists-and-Generics-22-05-2020/blob/master/DictionarySolution.java
+
 
 Readings reviewd in this discussion:
 - [ArrayLists](https://course.ccs.neu.edu/cs2510/lecture21.html)
